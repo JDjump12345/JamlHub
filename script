@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local hub = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
@@ -14,16 +14,22 @@ local TextButton_2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local TextButton_3 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local hubname = Instance.new("TextLabel")
 local TextButton_4 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local credits = Instance.new("TextLabel")
+local JD = Instance.new("TextLabel")
+local shiro = Instance.new("TextLabel")
+local Lucille = Instance.new("TextLabel")
+local thanks = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+hub.Name = "hub"
+hub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
+Frame.Parent = hub
 Frame.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
@@ -85,19 +91,20 @@ TextButton_3.TextSize = 14.000
 UICorner_5.CornerRadius = UDim.new(0.5, 0)
 UICorner_5.Parent = TextButton_3
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 100.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.148796499, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 167, 0, 38)
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Jamal hub V1"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+hubname.Name = "hub name"
+hubname.Parent = Frame
+hubname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hubname.BackgroundTransparency = 100.000
+hubname.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hubname.BorderSizePixel = 0
+hubname.Position = UDim2.new(0.148796499, 0, 0, 0)
+hubname.Size = UDim2.new(0, 167, 0, 38)
+hubname.Font = Enum.Font.SourceSansBold
+hubname.Text = "Jamal hub V1"
+hubname.TextColor3 = Color3.fromRGB(0, 0, 0)
+hubname.TextScaled = true
+hubname.TextSize = 14.000
+hubname.TextWrapped = true
 
 TextButton_4.Parent = Frame
 TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 58, 58)
@@ -115,9 +122,84 @@ TextButton_4.TextWrapped = true
 UICorner_6.CornerRadius = UDim.new(0.5, 0)
 UICorner_6.Parent = TextButton_4
 
+credits.Name = "credits"
+credits.Parent = Frame
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 100.000
+credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.315969318, 0, 2.73110223, 0)
+credits.Size = UDim2.new(0, 171, 0, 27)
+credits.Font = Enum.Font.SourceSansBold
+credits.Text = "Credits"
+credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+credits.TextScaled = true
+credits.TextSize = 14.000
+credits.TextWrapped = true
+
+JD.Name = "JD"
+JD.Parent = Frame
+JD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JD.BackgroundTransparency = 100.000
+JD.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JD.BorderSizePixel = 0
+JD.Position = UDim2.new(0.0380699113, 0, 3.551615, 0)
+JD.Size = UDim2.new(0, 192, 0, 26)
+JD.Font = Enum.Font.SourceSansBold
+JD.Text = "JD - Creator (jamal)"
+JD.TextColor3 = Color3.fromRGB(0, 0, 0)
+JD.TextScaled = true
+JD.TextSize = 14.000
+JD.TextWrapped = true
+
+shiro.Name = "shiro"
+shiro.Parent = Frame
+shiro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shiro.BackgroundTransparency = 100.000
+shiro.BorderColor3 = Color3.fromRGB(0, 0, 0)
+shiro.BorderSizePixel = 0
+shiro.Position = UDim2.new(0.0380699113, 0, 4.21828175, 0)
+shiro.Size = UDim2.new(0, 181, 0, 26)
+shiro.Font = Enum.Font.SourceSansBold
+shiro.Text = "Shiro - insparation"
+shiro.TextColor3 = Color3.fromRGB(0, 0, 0)
+shiro.TextScaled = true
+shiro.TextSize = 14.000
+shiro.TextWrapped = true
+
+Lucille.Name = "Lucille"
+Lucille.Parent = Frame
+Lucille.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lucille.BackgroundTransparency = 100.000
+Lucille.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lucille.BorderSizePixel = 0
+Lucille.Position = UDim2.new(0.0380699113, 0, 4.88494825, 0)
+Lucille.Size = UDim2.new(0, 181, 0, 26)
+Lucille.Font = Enum.Font.SourceSansBold
+Lucille.Text = "Lucille - insparation"
+Lucille.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lucille.TextScaled = true
+Lucille.TextSize = 14.000
+Lucille.TextWrapped = true
+
+thanks.Name = "thanks"
+thanks.Parent = Frame
+thanks.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+thanks.BackgroundTransparency = 100.000
+thanks.BorderColor3 = Color3.fromRGB(0, 0, 0)
+thanks.BorderSizePixel = 0
+thanks.Position = UDim2.new(0.0249409415, 0, 5.55161524, 0)
+thanks.Size = UDim2.new(0, 436, 0, 40)
+thanks.Font = Enum.Font.SourceSansBold
+thanks.Text = "Thanks for useing!"
+thanks.TextColor3 = Color3.fromRGB(0, 0, 0)
+thanks.TextScaled = true
+thanks.TextSize = 14.000
+thanks.TextWrapped = true
+
 -- Scripts:
 
-local function YRRG_fake_script() -- TextButton.LocalScript 
+local function HJVPM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -126,31 +208,31 @@ local function YRRG_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(YRRG_fake_script)()
-local function YDBKED_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(HJVPM_fake_script)()
+local function QJSIVO_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://whimper.xyz/kitty'))()
 	end)
 end
-coroutine.wrap(YDBKED_fake_script)()
-local function TLMFT_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(QJSIVO_fake_script)()
+local function ZKPZRXL_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()---SCIRPT HERE
 	end)
 end
-coroutine.wrap(TLMFT_fake_script)()
-local function YTXHT_fake_script() -- Frame.LocalScript 
+coroutine.wrap(ZKPZRXL_fake_script)()
+local function NGLEG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(YTXHT_fake_script)()
-local function IZCFSGK_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(NGLEG_fake_script)()
+local function WYLJJ_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -159,4 +241,4 @@ local function IZCFSGK_fake_script() -- TextButton_4.LocalScript
 		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(IZCFSGK_fake_script)()
+coroutine.wrap(WYLJJ_fake_script)()
