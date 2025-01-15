@@ -1,0 +1,92 @@
+
+local hub = Instance.new("ScreenGui")
+hub.Name = "hub"
+hub.Parent = playerGui
+hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- Your GUI creation code (just paste it all here, you already have this)
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local hubname = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local credits = Instance.new("TextLabel")
+local JD = Instance.new("TextLabel")
+local shiro = Instance.new("TextLabel")
+local Lucille = Instance.new("TextLabel")
+local thanks = Instance.new("TextLabel")
+
+-- Add your properties and connections as you have them...
+
+-- Initially hide the GUI
+hub.Enabled = false
+
+-- Function to listen to the player's chat
+local function onChatMessage(message)
+	if message:lower() == "/open" then
+		-- Show the GUI if the command "/open" is typed
+		hub.Enabled = true
+	end
+end
+
+-- Listen to the player's chat
+player.Chatted:Connect(onChatMessage)
+
+-- Include your existing scripts for button functionalities here (like the ones for button clicks)
+-- Example:
+local function HJVPM_fake_script() -- TextButton.LocalScript
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Button clicked!")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/JDjump12345/SystemBroken/main/script"))()	end)
+end
+coroutine.wrap(HJVPM_fake_script)()
+
+local function QJSIVO_fake_script() -- TextButton_2.LocalScript
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Error", -- Required
+			Text = "This script is down", -- Required
+			Icon = "rbxassetid://2592670412" -- Optional
+		})	end)
+end
+coroutine.wrap(QJSIVO_fake_script)()
+
+local function ZKPZRXL_fake_script() -- TextButton_3.LocalScript
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- SCRIPT HERE
+	end)
+end
+coroutine.wrap(ZKPZRXL_fake_script)()
+
+local function NGLEG_fake_script() -- Frame.LocalScript
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(NGLEG_fake_script)()
+
+local function WYLJJ_fake_script() -- TextButton_4.LocalScript
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Destroying Menu!")
+		wait(1)
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(WYLJJ_fake_script)()
